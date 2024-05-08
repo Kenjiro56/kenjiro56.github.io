@@ -1,119 +1,47 @@
-<html>
-  <head>
-    <meta charset='utf-8'>
-    <title>Kenjiro's Portfolio</title>
-    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-    <link rel ="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+<!DOCTYPE html>
+<html lang="ja">
 
-  </head>
-  <body>
-    
-    <!-- Top Navigation -->
-    <div class="border-b-2 py-4 ml-5">
-      <div class="flex flex-col md:flex-row md:items-center md:justify-between">
-        <div class="flex-1">
-          <div class="text-lg text-gray-700 leading-tight">Kenjiro Hirose</div>
-        </div>
-      </div>
-      <!-- /Top Navigation -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ポートフォリオ</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Custom styles */
+    </style>
+</head>
 
-      <!-- Step Content -->
-  
-      <div class="mb-5 text-center">
-        <div class="mx-auto w-32 h-32 mb-2 border rounded-full relative bg-gray-100 mb-4 shadow-inset">
-          <img id="image" class="object-cover w-full h-32 rounded-full " src="./drawn.jpeg">
-        </div>
-      </div>
-
-    <div class="m-5 grid-cols-1">
-        <div class="grid grid-cols-5 gap-5">
-          <div class="border text-center border-blue-400 p-3">GitHub<br> <a href="Kenjiro56">Kenjiro56</a></div>
-          <div class="border text-center border-blue-400 p-3">X<br> <a href="https://twitter.com/notifications">@r0se6K</a></div>
-          <div class="border text-center border-blue-400 p-3">Zenn<br><a href="https://zenn.dev/jiroken">@jiroken</a></div>
-          <div class="border text-center border-blue-400 p-3">Qiita<br><a href="https://qiita.com/Jiroken">Jiroken</a></div>
-          <div class="border text-center border-blue-400 p-3">Blog<br><a href="https://jackmer.hatenablog.com/">ろーぜのブログ</a></div>
-        </div>
+<body class="bg-gray-100 min-h-screen flex flex-col items-center justify-center">
+    <div class="bg-white p-3 rounded-full shadow-lg">
+        <img src="./drawn.jpeg" alt="Kenjiro Hirose" class="h-64 w-64 rounded-full">
     </div>
-      <!-- <div>
-        <h1>資格</h1>
-        <ul>
-          <li>基本情報技術者</li>
-          <li>TOEIC755</li>  
-        </ul>
-      </div> -->
-      <!-- <h1>研究実績</h1> -->
-      <!-- <h1>学会参加実績</h1> -->
-      <!---
-      <h1>成果物</h1>
-      タイトル：いなすりー
-      概要：JPHacks2020で作成。ミニゲーム付き目覚ましアプリ。ミニゲームをクリアするまでアラームが止まらない仕様。想定プラットフォームはスマートフォン。
-      開発背景：コロナ禍で生活習慣が乱れがちな大学生をターゲットとし、朝起きる事ができれば一日規則正しく生活ができると考え開発。インターン先の先輩や同期の大学生チームで開発をしペルソナを自分達自身と設定し開発。
-      開発期間：1週間
-      開発人数：6人
-      開発言語・フレームワーク：【Backend】Ruby,Ruby on Rails【Frontend】Node.js, Unity
-      役割：フロントエンド（Unityによるミニゲームの開発）
-      リポジトリURL：https://github.com/jphacks/D_2013
-
-      タイトル：Avion
-      概要：戦闘機を操作するレーシングゲーム。
-      開発背景：インターンの研修で作成。
-      開発期間：3週間
-      開発人数：1人
-      開発言語・フレームワーク：Unity
-      リポジトリURL：https://github.com/Kenjiro56/Avion
-
-      タイトル：Tempus
-      概要：過去の人物がうまくゴールに辿り着くように未来から来た人物をプレイヤーが操作しギミックなどを置く。
-      開発背景：インターンの研修で作成。
-      開発期間：3週間
-      開発人数：1人
-      開発言語・フレームワーク：Unity
-      リポジトリURL：https://github.com/Kenjiro56/Tempus
-
-      タイトル：Agolice
-      概要：インターンの研修の一環で作成。ターゲットを大学生とし、資格情報の勉強状況、質問等を行う事ができるSNS。
-      開発背景：高校生までは指導要綱があるため学習の方針に頭を悩ませることや、大学受験を目指す仲間が周りに多くおり情報を簡単に入手する事ができた。ただ、大学生になり資格を取ろうとしても周りに仲間がいなかった。特に自身は電気系の学科に所属していたが、情報系の資格を取得したかったためなおさら周りに一緒に勉強してくれる仲間がいなかった。勉強法等調べれば出てくるものの、リアルタイム性がなく「一緒に」頑張るという要素が欲しかった。そこで、勉強しているテキストであったり質問を投稿できるSNSを作ろうと考えた。中高生向けの勉強共有SNSは存在するが、あくまで「資格取得を目的とする大学生」をターゲットとし開発を行った。
-      開発期間：3週間
-      開発人数：1人
-      開発言語・フレームワーク：Ruby,sinatra,html,css,javascript
-
-      タイトル：STEPs
-      概要：LINEのbotに返信することでその日の日記が自動で生成されるサービス。
-      開発背景：エンジニアの人々は日常的にgithubにコミットしたりすることで毎日自身がその日何をしたかを記録し、振り返る事ができた。ただ、毎日記録している人は多くなく日記など付けている人も多数派ではない。ただ、その日の出来事などをメモすることによって自身を振り返る事ができ、大学生にとっては自己分析などにも活用する事ができる。そこで、普段から日記を簡単に残せるサービスを開発した。一番大切にしたのは、いかに日記をつけることのハードルを下げるかであり、最終的にLINEbotとなった。
-      開発期間：1.5ヶ月
-      開発人数：6人
-      開発言語・フレームワーク：【Backend】AWS【Frontend】flutter
-      役割：flutterのフロントエンド
-
-      タイトル：loadmap
-      概要：エンジニアになるための学習ロードマップをエンジニアの方などに作成していただき、学生が体系的に学ぶ事ができるようにするサービス。
-      開発背景：CCC2021の提出物として作成。テーマが地域格差であった。自身が岐阜出身であり、普段から東京に住む人とのエンジニアとの距離感に差があると感じていた。もちろん、記事などを探せばエンジニアの方が書いているものなどを見つける事ができたが、関東の友人は実際のエンジニアの人と直接会話をしている機会が多くあるといっていた。そこで、エンジニアの人がエンジニアになるために何を勉強したかの学習ロードマップを作成し共有することができるサービスを開発した。このサービスによって学生が体系的に学習する事ができ、さらなるレベルアップを図る事ができる。もちろん自分で手探りで紆余曲折しながら学習することも大切であると考えるが、体系的に学ぶ事ができるという選択肢を提示することは大切だと考えた。
-      開発期間：1ヶ月
-      開発人数：6人
-      開発言語・フレームワーク：【Backend】Ruby,Ruby on Rails【Frontend】React
-      役割：データベース設計（バックエンド）
-
-      タイトル：ロボカップの大会に使用するヒートマップを出力するプログラム
-      概要：ロボカップの審査の中に熱されたランドルト環をサーモカメラで読み取ってどちらが穴空いているか判断するために作成。
-      開発背景：
-      開発期間：1ヶ月
-      開発言語・フレームワーク：Arduino,ROS
-      リポジトリURL：https://github.com/Kenjiro56/thermal_21
-      --->
-      <!-- <div>
-        <h1>参加実績</h1>
-        <ul>
-          <li>セキュリティキャンプ全国大会2019 - フィジカルトラックコース</li>
-          <li>セキュリティミニキャンプ北海道2019</li>
-          <li>セキュリティミニキャンプ名古屋2019</li>
-          <li>JPHacks2020</li>
-          <li>CCC2021</li>
-          <li><a href="https://www.nitech.ac.jp/campus/news/9064.html">Robocup WorldWide2021ドローン部門最優秀ドローンパイロット賞</a></li>
-          <li>Robocup Asia Pacific2021レスキュー部門</li>
-          <li>セキュリティミニキャンプ東京2024 - Aコース</li>
-        </ul>
-      </div> -->
+    <h1 class="text-3xl font-bold mt-4">Kenjiro Hirose</h1>
+    <div class="mt-4 flex gap-4">
+        <a href="https://zenn.dev/jiroken" target="_blank"
+            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full transition duration-300">Zenn</a>
+        <a href="https://qiita.com/Jiroken" target="_blank"
+            class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-full transition duration-300">Qiita</a>
+        <a href="https://github.com/Kenjiro56" target="_blank"
+            class="bg-gray-800 hover:bg-gray-900 text-white font-bold py-2 px-4 rounded-full transition duration-300">GitHub</a>
+        <a href="https://twitter.com/r0se6K" target="_blank"
+            class="bg-purple-500 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded-full transition duration-300">X</a>
+        <a href="https://jackmer.hatenablog.com/" target="_blank"
+            class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-full transition duration-300">Blog</a>
     </div>
+    <div class="mt-8 max-w-xl mx-auto">
+        <h2 class="text-xl font-bold mb-4">活動実績</h2>
+        <ul>
+            <li class="mb-2">
+                <span class="font-semibold">2022年</span> - 活動内容1
+            </li>
+            <li class="mb-2">
+                <span class="font-semibold">2023年</span> - 活動内容2
+            </li>
+            <li class="mb-2">
+                <span class="font-semibold">2024年</span> - 活動内容3
+            </li>
+        </ul>
+    </div>
+</body>
 
-  </body>
 </html>
