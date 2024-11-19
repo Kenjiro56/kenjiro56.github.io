@@ -1,11 +1,11 @@
 import React from 'react';
+import IntroPanel from '../components/IntroPanel';
 
 function App() {
   return (
     <div className="App">
-      <div className="bg-white p-3 rounded-full shadow-lg">
-          <img src="./drawn.jpeg" alt="Kenjiro Hirose" className="h-64 w-64 rounded-full" />
-      </div>
+      <IntroPanel />
+
       <h1 className="text-3xl font-bold mt-4">Kenjiro Hirose</h1>
       <div className="mt-4 flex gap-4">
           <a href="https://zenn.dev/jiroken" target="_blank"
