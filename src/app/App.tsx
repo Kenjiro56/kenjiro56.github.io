@@ -7,13 +7,13 @@ import LinksPanel from '../components/LinksPanel';
 
 function App() {
   return (
-    <div className="App">
-      <IntroPanel />
-      <CertificationPanel />
-      <InterestedPanel />
-      <ExperiencedPanel />
-      <LinksPanel />
-    </div>
+      <div className="App">
+        <IntroPanel />
+        <CertificationPanel />
+        <InterestedPanel />
+        <ExperiencedPanel />
+        <LinksPanel />
+      </div>
   );
 }
 
