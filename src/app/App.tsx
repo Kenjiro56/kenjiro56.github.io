@@ -1,16 +1,16 @@
 import React from 'react';
 import IntroPanel from '../components/IntroPanel';
-import CertificationPanel from '../components/CertificationPanel';
-import InterestedPanel from '../components/InterestedPanel';
 import ExperiencedPanel from '../components/ExperiencePanel';
 import LinksPanel from '../components/LinksPanel';
+import CardwithoutDes from '../components/CardwithoutDes';
+import { CertificationText, InterestText } from '../constants/data';
 
 function App() {
   return (
       <div className="App">
         <IntroPanel />
-        <CertificationPanel />
-        <InterestedPanel />
+        <CardwithoutDes title={'Certification'} contents={ CertificationText }/>
+        <CardwithoutDes title={'Interested'} contents={ InterestText }/>
         <ExperiencedPanel />
         <LinksPanel />
       </div>
