@@ -9,7 +9,15 @@ const ExperienceCard: React.FC = () => {
     <GridItem borderWidth='1px'>
       <Image src={data.imgsrc}/>
       <HStack>
-        <Badge colorPalette="teal" variant="solid">
+        <Badge variant="solid" colorPalette={`
+          ${
+            data.category === 'Internship' ? 'green' :
+            data.category === 'Workshop' ? 'blue' :
+            data.category === 'Club' ? 'red' :
+            data.category === 'Project' ? 'purple' :
+            'gray'
+          }
+        `} >
           { data.category }
         </Badge>
         <Text>
