@@ -1,12 +1,20 @@
 import React from "react";
+import { Center, Heading, Grid } from "@chakra-ui/react";
+import ExperienceCard from "./ExperienceCard";
 
 const ExperiencePanel = () => {
   return (
     <>
-    <h2 className="text-xl font-bold mb-4 text-center">Experience</h2>
+      <Center h="100%">
+        <Heading size="3xl">Experience</Heading>
+      </Center>
+      <Grid templateColumns="repeat(4, 1fr)" gap="5">
+        <ExperienceCard />
+      </Grid>
+        {/*
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
 
-              {/* <!-- Application Category --> */}
+
               <div>
                   <h3 className="text-lg font-semibold mb-4 text-purple-500">Application</h3>
                   <ul className="space-y-4">
@@ -42,11 +50,11 @@ const ExperiencePanel = () => {
                           <p className="text-gray-700"><a href="https://ccc2021.code4japan.org/">大会リンク</a></p>
                       </details>
                       </li>
-                      {/* <!-- Add more Application items as needed --> */}
+
                   </ul>
               </div>
 
-              {/* <!-- Security Category --> */}
+
               <div>
                   <h3 className="text-lg font-semibold mb-4 text-pink-500">Security</h3>
                   <ul className="space-y-4">
@@ -83,11 +91,11 @@ const ExperiencePanel = () => {
                           </details>
                       </li>
 
-                      {/* <!-- Add more Security items as needed --> */}
+
                   </ul>
               </div>
 
-              {/* <!-- Robotics Category --> */}
+
               <div>
                   <h3 className="text-lg font-semibold mb-4 text-green-500">Robotics</h3>
                   <ul className="space-y-4">
@@ -99,10 +107,11 @@ const ExperiencePanel = () => {
                               <p className="text-gray-700 mt-2"><a href="https://nitsazanka.studio.site/">部活公式HP</a></p>
                           </details>
                       </li>
-                      {/* <!-- Add more Robotics items as needed --> */}
+
                   </ul>
               </div>
           </div>
+       */}
     </>
   );
 };
