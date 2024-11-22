@@ -38,7 +38,9 @@ const ExperienceCard: React.FC = () => {
           { data.date }
         </Text>
         <IconContext.Provider value={{color: '#ccc'}}>
-          <FaExternalLinkAlt/>
+          <a href={data.src}>
+            <FaExternalLinkAlt/>
+          </a>
         </IconContext.Provider>
       </Flex>
     </Box>
