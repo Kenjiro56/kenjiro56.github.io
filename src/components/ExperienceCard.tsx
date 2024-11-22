@@ -1,23 +1,26 @@
 import React from "react";
-import { Image, HStack, Badge, Text, Icon, GridItem } from "@chakra-ui/react";
+import { Image, HStack, Badge, Text, Box } from "@chakra-ui/react";
 import { SlCalender } from "react-icons/sl";
 import { ExperienceData } from "../constants/data";
 
 
 const ExperienceCard: React.FC = () => {
   const listItems = ExperienceData.map((data, index) => (
-    <GridItem borderWidth='1px'>
+    <Box borderWidth='1px' key={index}>
       <Image src={data.imgsrc}/>
       <HStack>
-        <Badge variant="solid" colorPalette={`
-          ${
-            data.category === 'Internship' ? 'green' :
-            data.category === 'Workshop' ? 'blue' :
-            data.category === 'Club' ? 'red' :
-            data.category === 'Project' ? 'purple' :
-            'gray'
-          }
-        `} >
+        <Badge variant="solid"
+        colorPalette= 'teal'
+        // {`
+        //   ${
+        //     data.category === 'Internship' ? 'teal' :
+        //     data.category === 'Workshop' ? 'blue' :
+        //     data.category === 'Club' ? 'purple' :
+        //     data.category === 'Hackathon' ? 'cyan' :
+        //     'grey'
+        //   }
+        // `}
+        >
           { data.category }
         </Badge>
         <Text>
@@ -28,18 +31,14 @@ const ExperienceCard: React.FC = () => {
         { data.description }
       </Text>
       <HStack>
-        <Icon>
-            <SlCalender />
-        </Icon>
+        <SlCalender />
         <Text color="fg.muted">
           { data.date }
         </Text>
       </HStack>
-
-    </GridItem>
+    </Box>
 
   ));
-
   return (
     <>
       {listItems}

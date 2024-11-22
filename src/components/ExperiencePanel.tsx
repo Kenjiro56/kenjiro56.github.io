@@ -1,5 +1,5 @@
 import React from "react";
-import { Center, Heading, Grid } from "@chakra-ui/react";
+import { Center, Heading, SimpleGrid } from "@chakra-ui/react";
 import ExperienceCard from "./ExperienceCard";
 
 const ExperiencePanel = () => {
@@ -8,9 +8,9 @@ const ExperiencePanel = () => {
       <Center h="100%">
         <Heading size="3xl">Experience</Heading>
       </Center>
-      <Grid templateColumns="repeat(4, 1fr)" gap="5">
+      <SimpleGrid columns={[1, 2, 4]} gap="5">
         <ExperienceCard />
-      </Grid>
+      </SimpleGrid>
     </>
   );
 };
