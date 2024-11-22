@@ -7,13 +7,13 @@ interface CardwithoutDesProps {
 
 const CardwithoutDes: React.FC<CardwithoutDesProps> = ( props ) => {
   const listItems = props.contents.map((content, index) => (
-    <Box key={index} borderWidth="2px" p="2">
+    <Box key={index} borderWidth="1px" p="2" borderColor='teal' rounded='md' shadow='md'>
       {content}
     </Box>
   ));
   return (
     <>
-      <Center h="100%">
+      <Center h="100%"  mt='4%' mb='1%'>
         <Heading size="3xl">{ props.title }</Heading>
       </Center>
       <Flex justify="center" gap="4">

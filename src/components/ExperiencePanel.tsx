@@ -5,7 +5,7 @@ import ExperienceCard from "./ExperienceCard";
 const ExperiencePanel = () => {
   return (
     <>
-      <Center h="100%">
+      <Center h="100%" mt='4%' mb='1%'>
         <Heading size="3xl">Experience</Heading>
       </Center>
       <SimpleGrid columns={[1, 2, 4]} gap="5">
