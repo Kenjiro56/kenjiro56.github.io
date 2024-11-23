@@ -1,5 +1,5 @@
 import React from "react";
-import { Image, HStack, Badge, Text, Box, Flex } from "@chakra-ui/react";
+import { Image, Badge, Text, Flex } from "@chakra-ui/react";
 import { SlCalender } from "react-icons/sl";
 import { ExperienceData } from "../constants/data";
 import { FaExternalLinkAlt } from "react-icons/fa";
@@ -8,7 +8,7 @@ import { IconContext } from "react-icons";
 
 const ExperienceCard: React.FC = () => {
   const listItems = ExperienceData.map((data, index) => (
-    <Box borderWidth='1px' key={index} shadow='md' p='2'>
+    <Flex borderWidth='1px' key={index} shadow='md' p='2' direction='column'>
       <Image src={data.imgsrc} bg='blue.950' aspectRatio={16/9}/>
       <Flex direction='column' mt='1'>
         <Badge variant="solid" colorPalette= 'teal'>
@@ -24,7 +24,7 @@ const ExperienceCard: React.FC = () => {
         { data.description }
       </Text>
 
-      <Flex align='center' gap='1' justify='space-between'>
+      <Flex align='center' gap='1' justify='space-between' mt='auto'>
         <SlCalender />
         <Text color="fg.muted" marginEnd='auto'>
           { data.date }
@@ -35,7 +35,7 @@ const ExperienceCard: React.FC = () => {
           </a>
         </IconContext.Provider>
       </Flex>
-    </Box>
+    </Flex>
 
   ));
   return (

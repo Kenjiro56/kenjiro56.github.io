@@ -56,7 +56,7 @@ export const ExperienceData = [
     src: 'https://life-is-tech.com/',
   },
   {
-    imgsrc: 'https://dfstudio-d420.kxcdn.com/wordpress/wp-content/uploads/2019/06/digital_camera_photo-1080x675.jpg',
+    imgsrc: 'https://pbs.twimg.com/media/FFA6LzeacAAN3tb?format=jpg&name=large',
     category: 'Club',
     title: '名古屋工業大学SAZANKA制御班/広報',
     date: '2020/11-2022/3',
