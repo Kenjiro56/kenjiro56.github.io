@@ -16,7 +16,7 @@ const CardwithoutDes: React.FC<CardwithoutDesProps> = ( props ) => {
   return (
     <>
       <Center h="100%"  mt='4%' mb='1%'>
-        <Heading size="3xl">{ props.title }</Heading>
+        <Heading size="3xl" textDecoration='underline'>{ props.title }</Heading>
       </Center>
       <SimpleGrid columns={[1, 4, 7]} gap="4">
         { listItems }
