@@ -20,7 +20,7 @@ const ExperienceCard: React.FC = () => {
         </Text>
       </Flex>
 
-      <Text>
+      <Text fontSize='sm' color='#333'>
         { data.description }
       </Text>
 
