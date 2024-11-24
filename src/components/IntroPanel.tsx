@@ -1,5 +1,5 @@
 import React from 'react';
-import { Flex, Image, Heading, Text } from '@chakra-ui/react';
+import { Flex, Image, Heading, Text, Highlight } from '@chakra-ui/react';
 import profile_img from '../assets/drawn.jpeg';
 
 
@@ -7,14 +7,18 @@ const IntroPanel = () => {
   return (
     <Flex justify="center" align="center"  mt='4%' mb='1%'>
       <div>
-        <Heading size="6xl">Kenjiro Hirose</Heading>
-        <Text>岐阜出身。名古屋工業大学を卒業後、大阪大学大学院へ進学。2025年卒業予定。</Text>
+        <Heading size={["3xl","4xl","6xl"]}>
+          <Highlight query='Kenjiro' styles={{ color: "blue.500" }}>
+            Kenjiro Hirose
+          </Highlight>
+        </Heading>
+        <Text fontSize={['xs','lg']}>岐阜出身。名古屋工業大学を卒業後、大阪大学大学院へ進学。2025年卒業予定。</Text>
       </div>
       <Image
         src={profile_img}
         alt="Kenjiro Hirose"
         borderRadius="full"
-        width="300px"
+        width="30%"
         ml='2%'
         shadow='md'
       />
