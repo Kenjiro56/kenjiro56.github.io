@@ -1,6 +1,7 @@
 
 export const CertificationText = [
   '学士(工学)',
+  '修士(工学)',
   '基本情報技術者',
   '応用情報技術者'
 ]
@@ -20,7 +21,7 @@ export const ExperienceData = [
     imgsrc: 'https://dfstudio-d420.kxcdn.com/wordpress/wp-content/uploads/2019/06/digital_camera_photo-1080x675.jpg',
     category: 'Internship',
     title: 'Life is Tech!メンター',
-    date: '2020/8-',
+    date: '2020/8-2025/3',
     description: '中高生のUnityを用いたゲーム開発やRuby,Sinatraを用いてWebサービス開発等を支援しています。',
     src: 'https://life-is-tech.com/',
   },
