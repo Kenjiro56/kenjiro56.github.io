@@ -12,7 +12,7 @@ const IntroPanel = () => {
             Kenjiro Hirose
           </Highlight>
         </Heading>
-        <Text fontSize={['xs','lg']}>岐阜出身。名古屋工業大学を卒業後、大阪大学大学院へ進学。2025年卒業。東京でセキュリティエンジニアしてます（予定）</Text>
+        <Text fontSize={['xs','lg']}>岐阜出身。名古屋工業大学を卒業後、大阪大学大学院へ進学。2025年卒業。東京でセキュリティエンジニアしてます。</Text>
       </div>
       <Image
         src={profile_img}
